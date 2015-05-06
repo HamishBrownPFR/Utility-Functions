@@ -29,3 +29,26 @@ To edit the content of these functions:
 
 To add new functin libaries:
 - Create a new note book with the appropriate functions and %%writefile magic
+
+###Adding and updating docummntation to functions
+A docstring attribute should be added to each function describing what it does, what its arguements are and what units the return and the arguements are in.  This is doen by adding a text string the line below the function decleration.  As below:
+
+```python
+def nett_radiation(total_radiation):
+    """Net solar radiation (MJ/m2) which is total incomming radiation less that which is reflected.
+    
+    This function is taken from Jamieson P. 1982. Comparision of methods of estimating maximum 
+    evapotranspiration from a barley crop. New Zealand Journal of Science, 25: 175-181.
+    
+    Args:
+        total_radiation: Total incoming solar radiation (Units MJ/M2/day)
+    
+    Returns:
+        Value of net solar radiation
+    """
+    _ret = None
+    _ret = - 0.25 + 0.59 * total_radiation
+    return _ret
+```
+
+For the docstring to be added or updated the cell containing the function must be run.   %%writefile majic just writes the contents of the cell withing out running all that is below.  Thus if docummentation is added or changed for a function the %%writefile line should be commented out and the cell containing the functions run before uncommenting the %%writefile majic and running the cell again to create the function library with upto date documentation on the functions
