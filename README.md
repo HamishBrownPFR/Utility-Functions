@@ -19,7 +19,7 @@ import ETFunctions
 ETFunctions.PenmanEO()
 ```
 - Tab completion will bring up all the functions available in that library
-- Shift+Tab to the right of the first bracket in the function brings up the arguments the function needs
+- Shift+Tab to the right of the first bracket in the function brings up the arguments the function needs and the contents of the funtions docstring (docummentation, see below for more detail on documenting functions)
 
 To edit the content of these functions:
 - Simply change the content of the cell in the note book, either fixing errors in functions or adding new ones.
