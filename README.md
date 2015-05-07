@@ -1,5 +1,5 @@
 # Utility-Functions-Modelling
-##Contains complex functions that may be referenced in other ipython notebooks
+##Common functions that may be referenced in other ipython notebooks
 
 This repository contains a number of ipython notebook files (.ipynb) each containing a single cell with a number of functions defined in each.  The work flow for using these functions (using EvapotranspirationFunctions.ipynb as an example) is as follows:
 - Clone the Utility-Functions-Moedlling repository to your computer
